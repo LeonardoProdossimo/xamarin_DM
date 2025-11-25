@@ -1,0 +1,158 @@
+:root {
+    --glass-bg: rgba(15, 23, 42, 0.8);
+    --glass-border: rgba(148, 163, 184, 0.2);
+    --gradient: linear-gradient(135deg, #1d4ed8, #9333ea, #f97316);
+}
+
+body.maui-body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    font-family: "Poppins", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.layout-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.layout-content {
+    margin-top: 16px;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(18px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 20px 60px rgba(8, 11, 24, 0.6);
+}
+
+.hero-card {
+    background: linear-gradient(120deg, rgba(30, 64, 175, 0.95), rgba(147, 51, 234, 0.95));
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    color: #f8fafc;
+    box-shadow: 0 25px 70px rgba(15, 23, 42, 0.5);
+}
+
+.hero-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    margin: 0;
+    opacity: 0.92;
+}
+
+.hero-card .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.hero-kpi {
+    text-align: center;
+}
+
+.hero-kpi .label {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 12px;
+}
+
+.hero-kpi strong {
+    font-size: 3rem;
+    display: block;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.search-box {
+    background-color: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    color: #f1f5f9;
+}
+
+.search-box::placeholder {
+    color: rgba(226, 232, 240, 0.65);
+}
+
+.table-dark {
+    --bs-table-bg: rgba(15, 23, 42, 0.6);
+    --bs-table-striped-bg: rgba(15, 23, 42, 0.8);
+    --bs-table-hover-bg: rgba(59, 130, 246, 0.12);
+}
+
+.empty-state {
+    border: 2px dashed rgba(148, 163, 184, 0.3);
+    border-radius: 18px;
+}
+
+.btn-primary {
+    background-image: var(--gradient);
+    border: 0;
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.35);
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #f8fafc;
+}
+
+.navbar {
+    background-color: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.navbar .nav-link {
+    color: rgba(248, 250, 252, 0.85);
+    font-weight: 500;
+}
+
+.navbar .nav-link.active {
+    color: #f8fafc;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+@media (max-width: 768px) {
+    .layout-shell {
+        padding: 16px;
+    }
+
+.page-wrapper {
+    padding-bottom: 48px;
+}
+
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
